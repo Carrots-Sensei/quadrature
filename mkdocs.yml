@@ -1,0 +1,22 @@
+# mkdocs.yml
+site_name: Gaussian Cuadrature Docs
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings
+
+nav:
+  - Documentación: index.md
+  - Tutoriales: tutorials.md
+  - Referencias: reference.md
+  - Explicación: explanation.md
+  
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
